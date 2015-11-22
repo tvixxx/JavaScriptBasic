@@ -1,7 +1,0 @@
-/* Function reverse string */
-
-/* First method */
-function reverseString (string) {
-  string.split("").reverse().join("");
-}
-alert(reverseString("i like HTML and CSS and etc"));
