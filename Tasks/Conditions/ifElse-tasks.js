@@ -1,5 +1,5 @@
-/* Check standart. First task */
 /* First task */
+/* Check standart*/
 
 var name = prompt ("Which true name of JavaScript?","");
 if (name == "EcmaScript" ) {
@@ -8,8 +8,8 @@ if (name == "EcmaScript" ) {
    alert ("u don't know? 'EcmaScript!'");
 }
 
-/* Get the number symbol. */
 /* Second task */
+/* Get the number symbol. */
 
 var value = prompt("Please,enter the number...","");
 if ( value > 0 ) {
@@ -20,8 +20,8 @@ if ( value > 0 ) {
    alert ( 0 );
 }
 
-/*  Check login */
 /* Third task */
+/*  Check login */
 
 var who = prompt ("Who are you?","");
 	if (who == "Admin") {
@@ -39,8 +39,9 @@ var who = prompt ("Who are you?","");
 		alert ("I don't know you!");
 	}
 	
-	/* 'if' in '?' */
-   /* Fourth task */
+
+/* Fourth task */	
+/* 'if' in '?' */
    
 /* Base code  */
 if (a + b < 4) {
