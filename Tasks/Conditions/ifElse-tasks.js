@@ -78,3 +78,37 @@ var message = (login == 'Vasya') ? 'Hello' :
   (login == '') ? 'Login is incorrect' :
   '';
 }
+
+/* Six task */
+/* If , else if , swtich */ 
+
+/* base code */
+switch (browser) {
+  case 'IE':
+    alert( 'О, да у вас IE!' );
+    break;
+
+  case 'Chrome':
+  case 'Firefox':
+  case 'Safari':
+  case 'Opera':
+    alert( 'Да, и эти браузеры мы поддерживаем' );
+    break;
+
+  default:
+    alert( 'Мы надеемся, что и в вашем браузере все ок!' );
+}
+
+/* finale */
+var browser = prompt("Enter the your browser","");
+if (browser == "IE") {
+    alert("Oh! u're browser is: IE");
+}
+else if (browser == "Chrome"
+        || browser == "Firefox"
+        || browser == "Safari"
+        || browser == "Opera" ) {
+    alert("These browsere we too supported!");
+} else {
+    alert("We are hope , all it's good!");
+}
