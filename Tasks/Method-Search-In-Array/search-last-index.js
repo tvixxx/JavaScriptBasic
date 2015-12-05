@@ -22,3 +22,13 @@ var incrementLastArrayElement = function(_array) {
     return newArray;
 };
 console.log(incrementLastArrayElement(sampleArray));
+
+
+/* Second method - through the *slice* */
+function incrementLastArrayElement(_array)  {
+    var newArray = [];
+    newArray = _array.slice(0);
+    var lastNumber = newArray.pop();
+    newArray.push(lastNumber + 1);
+    return newArray;
+}
