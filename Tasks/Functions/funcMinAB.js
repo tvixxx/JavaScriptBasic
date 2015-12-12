@@ -7,4 +7,4 @@ function minNumb(a,b) {
 		return false;
 	};
 };
-console.log(minNumb(5,4);
+console.log(minNumb(5,4));
