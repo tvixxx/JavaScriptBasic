@@ -6,7 +6,7 @@ var name = "AlbERt EINstEiN";
 
 function nameChanger(oldName) {
     var finalName = oldName;
-    // Your code goes here!
+
     oldName = [];
     for (var i = 0; i < oldName.length; i++) {
         console.log(oldName + " " + "length is: " + oldName.length);
@@ -20,8 +20,6 @@ function nameChanger(oldName) {
     strSplit[0] = strSplit[0].slice(0,1).toUpperCase() + strSplit[0].slice(1).toLowerCase();
     finalName = strSplit.join(" ");
     
-    
-    // Don't delete this line!
     return finalName;
 };
 
@@ -31,7 +29,6 @@ var name = "AlbERt EINstEiN";
 
 function nameChanger(oldName) {
     var finalName = oldName;
-    // Your code goes here!
     oldName = [];
     for (var i = 0; i < oldName.length; i++) {
         console.log(oldName + " " + "length is: " + oldName.length);
@@ -46,14 +43,12 @@ function nameChanger(oldName) {
     
     finalName = strSplit.join(" ");
     
-    // Don't delete this line!
+
     return finalName;
 };
 
-// Did your code work? The line below will tell you!
 console.log(nameChanger(name));
-// Did your code work? The line below will tell you!
-console.log(nameChanger(name));
+
 
 
 /* Second method */
