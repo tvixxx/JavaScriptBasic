@@ -41,7 +41,7 @@ function nameChanger(oldName) {
     var lastName = strSplit[1].toUpperCase();
     console.log("Your finale name is: " + firstName + " " + lastName);
     
-    finalName = strSplit.join(" ");
+    finalName = firstName + ' ' + lastName;
     
 
     return finalName;
