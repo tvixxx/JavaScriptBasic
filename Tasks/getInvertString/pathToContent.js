@@ -12,4 +12,4 @@ function invert(path, content) {
 	return resultMap;
 }
 
-console.log(pathToContent(path, content));
+console.log(invert(path, content));
