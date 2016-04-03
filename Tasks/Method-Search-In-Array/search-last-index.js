@@ -32,3 +32,15 @@ function incrementLastArrayElement(_array)  {
     newArray.push(lastNumber + 1);
     return newArray;
 }
+
+
+/* Third mehotd */
+var array = [0,0,7];
+
+function getLastIndexUp(_array) {
+   var lastIndex = _array.pop();
+   _array.push(lastIndex + 1);
+   return _array;
+};
+
+getLastIndexUp(array); //[0, 0, 8]
