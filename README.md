@@ -1,2 +1,2 @@
 # JavaScriptBasic
-learn.JavaScript.ru - way to learn JavaScript
+way to learn JavaScript
