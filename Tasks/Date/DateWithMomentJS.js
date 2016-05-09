@@ -1,28 +1,33 @@
-var oneWeek = 7;
-var twoWeek = 14;
+var dateFromStore = moment(new Date(2016, 4, 5)),
+ 		oneWeek = 7,
+ 		twoWeek = 14;
 
-var dateFromStore = moment(new Date(2016, 3, 2));
-
-function getSecondsToday(yourDate){
+function getDaysLater(yourDate){
 	
-	var dateNow = moment();
+  var dateNow = moment(),
+			dateFromStore = yourDate,
+			diffResult = moment(dateNow).diff(moment(dateFromStore));
 	
-	var dateFromStore = yourDate;
-	var dateFromStoreDiffResult = moment(dateNow).diff(moment(dateFromStore));
-	console.log(dateFromStoreDiffResult);
-  
-	var intervalAsDays = Math.floor(moment.duration(dateFromStoreDiffResult).as('days'));
+	console.log(diffResult);
+	
+	var intervalAsDays = Math.floor(moment.duration(diffResult).as('days'));
 	console.log(intervalAsDays);
 	
-	if (+intervalAsDays > 14) {
-		console.log('Прошло 2 недели');
-	} else if (+intervalAsDays > 7) {
+	if (intervalAsDays > 14){
+		
+		console.log('Прошло больше 2-ух недель');
+	} else if (intervalAsDays  == 7) {
+		
 		console.log('Прошла неделя');
+	} else if (intervalAsDays >= 7 && intervalAsDays <= 13) {
+		
+		console.log('Прошло больше недели')
 	} else {
-		console.log('Прошло несколько дней');
+		
+		console.log('Прошло несколько дней' + ' - ' + intervalAsDays);
 	}
 	
 	return Math.floor(intervalAsDays);
 }
 
-getSecondsToday(dateFromStore);
+getDaysLater(dateFromStore);
