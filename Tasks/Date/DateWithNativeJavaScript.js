@@ -1,4 +1,4 @@
-var dateFromStorage = new Date(2016, 3, 1);
+var dateFromStorage = new Date(2016, 4, 4);
 
 function getDaysLater(yourDate){
 	
@@ -17,5 +17,5 @@ if (getDaysLater(dateFromStorage) > 14) {
 } else if (getDaysLater(dateFromStorage) > 7) {
 	console.log('Прошла неделя');
 } else {
-	console.log('Прошло несколько дней');
+	console.log('Прошло несколько дней' + ' - ' + getDaysLater(dateFromStorage));
 }
