@@ -1,22 +1,21 @@
 var dateFromStorage = new Date(2016, 3, 1);
 
-function getDaysToday(yourDate){
+function getDaysLater(yourDate){
 	
-	var dayMillSec = 86400000;
-	var dateNow = new Date();
-	console.log(dateNow);
+	var day = 86400000; // milliseconds in one day
+  var now = new Date(); // create new date - today
+	
+  var dateFromStorage = yourDate;
 
-	var dateFromStorage = yourDate;
-	console.log(dateFromStorage);
-
-	var diff = (dateNow - dateFromStorage) / dayMillSec; // Конечное число дней
-	return Math.floor(diff); // Округление дней
+  var diff = (now - dateFromStorage) / day; // difference between dates
+	
+  return Math.floor(diff); // round through Math.floor
 }
 
-	if (+getDaysToday(dateFromStorage) > 14) {
-		console.log('Прошло 2 недели');
-	} else if (+getDaysToday(dateFromStorage) > 7) {
-		console.log('Прошла неделя');
-	} else {
-		console.log('Прошло несколько дней');
-	}
+if (getDaysLater(dateFromStorage) > 14) {
+	console.log('Прошло 2 недели');
+} else if (getDaysLater(dateFromStorage) > 7) {
+	console.log('Прошла неделя');
+} else {
+	console.log('Прошло несколько дней');
+}
