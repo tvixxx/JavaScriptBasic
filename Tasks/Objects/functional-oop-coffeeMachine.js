@@ -2,18 +2,19 @@ function CoffeeMachine(power, capacity){
  
   var self = this;
 
-  var waterAmount = 0;
-  var powerAmount = 0;
+  var waterAmount = 0,
+      powerAmount = 0;
   
-  var WATER_HEAT_CAPACITY = 4200;
-  var timerId;
+  var WATER_HEAT_CAPACITY = 4200,
+      temperatureOfWaterDelta = 100 - 20;
+      timerId;
   
   powerAmount = power;
   
   console.log('Создана кофеварка мощностью: ' + power + ' ватт');
   
   function getBoilTime(){
-    return self.waterAmount * WATER_HEAT_CAPACITY * 80 / power;
+    return self.waterAmount * WATER_HEAT_CAPACITY * temperatureOfWaterDelta / power;
   }
   
   this.setWaterAmount = function(amount){
@@ -35,11 +36,7 @@ function CoffeeMachine(power, capacity){
     
     return waterAmount;
   };
-  
-  this.stop = function(){
-    clearTimeout(timerId);
-  };
-  
+ 
   this.setNewPowerAmount = function(newPowerAmount){
     
     var maxPowerCoffeeMachine = 10000;
@@ -70,6 +67,11 @@ function CoffeeMachine(power, capacity){
   function onReady(){
     console.log('Кофе готов!');
   }
+  
+  this.stop = function(){
+    clearTimeout(timerId);
+  };
+  
 }
 
 var coffeeMachine = new CoffeeMachine(100000, 1000);
