@@ -14,6 +14,7 @@ function CoffeeMachine(power, capacity){
   console.log('Создана кофеварка мощностью: ' + power + ' ватт');
   
   function getBoilTime(){
+   
     return self.waterAmount * WATER_HEAT_CAPACITY * temperatureOfWaterDelta / power;
   }
   
