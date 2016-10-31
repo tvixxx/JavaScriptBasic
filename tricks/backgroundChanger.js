@@ -55,5 +55,5 @@
         }
     })();
 
-})(jQuery, window.MC_IVI_APP || (window.MC_IVI_APP = {}));
+})(jQuery, window.TEST || (window.TEST = {}));
 
