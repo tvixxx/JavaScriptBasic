@@ -1,11 +1,11 @@
 
 // Решение через цикл for
 (function() {
-  var height = 6;
-  var goal = 0;
+  var height = 6; // Высота башни (захардкоженное число)
+  var goal = 0; // Дойти до отметки 0, то есть когда все части будут перенесены
 
   for (var i = 0; i < height; i++) {
-     goal = 2 * goal + 1;
+     goal = 2 * goal + 1; // формула из учебника *конкретная математика?
   }
   
   console.log(`Задача имеет ${goal} решений`);
@@ -22,7 +22,6 @@ function recursion(height) {
   } else {
   	return 2 * recursion(height - 1) + 1;
   }
-  
 }
 
 console.log(recursion(3));
