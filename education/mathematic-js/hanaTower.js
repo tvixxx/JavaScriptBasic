@@ -18,7 +18,7 @@
 function recursion(height) {
   
   if (height == 0) {
-			return 0;  	
+	return 0;  	
   } else {
   	return 2 * recursion(height - 1) + 1;
   }
