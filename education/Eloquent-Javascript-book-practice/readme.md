@@ -18,13 +18,15 @@
   }
 ```
 **Вывод:**
-> "#"  
+```
+  "#"  
   "##"  
   "###"  
   "####"  
   "#####"  
   "######"  
   "#######"  
+```
 
 ### Задача №2 - FizzBuzz
 **Условие**:  
@@ -48,7 +50,8 @@ for (var i = 1; i < 100; i++ ) {
 }
 ```
 **Вывод:**
-> "i: 3 phrase is: Fizz"  
+```
+"i: 3 phrase is: Fizz"  
 "i: 5 phrase is: Buzz"  
 "i: 6 phrase is: Fizz"  
 "i: 9 phrase is: Fizz"  
@@ -94,6 +97,7 @@ for (var i = 1; i < 100; i++ ) {
 "i: 95 phrase is: Buzz"  
 "i: 96 phrase is: Fizz"  
 "i: 99 phrase is: Fizz"    
+```
 
 ### Задача №3 - Шахматная доска
 **Условие**:  
