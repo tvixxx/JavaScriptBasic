@@ -119,3 +119,15 @@ if (!isNaN(checkboardLength)) {
 
 console.log(checkboard);
 ```
+**Вывод:**
+>
+"  
+# # # #  
+ # # # #  
+# # # #  
+ # # # #  
+# # # #  
+ # # # #  
+# # # #   
+ # # # #  
+"  
