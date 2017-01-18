@@ -9,6 +9,7 @@ var phonebook = [
 
 var lookup_person = "Баранов Сергей";
 
+// Функция возвращения индекса пары
 function find_index_of_searching_phone(phonebook, lookup_person) {
   
   for (var i = 0; i < phonebook.length; i++) {
