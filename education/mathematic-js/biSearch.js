@@ -1,13 +1,22 @@
 var phonebook = [
   ["Абалаев Иван", "111-11-11"],        // элемент списка №0 
   ["Баранов Сергей", "222-11-11"],      // элемент списка №1
-  ["Волкова Ольга", "333-11-11"],       // элемент списка №2
+  ["Волкова Ольга", "333-11-11"],        // элемент списка №2
   ["Громов Пётр", "444-11-11"],         // элемент списка №3
   ["Добрая Анна", "555-11-11"],         // элемент списка №4
   ["Ежова Елизавета", "666-11-11"]      // элемент списка №5
 ];
 
-var lookup_person = "Добрая Анна";
+var lookup_person = "Баранов Сергей";
+
+function find_index_of_searching_phone(phonebook, lookup_person) {
+  
+  for (var i = 0; i < phonebook.length; i++) {
+    if (phonebook[i][1] === lookup_person) {
+      return i;
+    }
+  }
+}
 
 function get_middle_index(phonebook) {
     return Math.floor(phonebook.length / 2)
@@ -31,6 +40,7 @@ function get_second_half(phonebook) {
 function binary_search(phonebook, lookup_person) {
   middle_pair = get_middle_record(phonebook);
   middle_person = middle_pair[0];
+  
   if (middle_person == lookup_person) {
     //Ура, мы все нашли
     middle_phone = middle_pair[1];
@@ -52,4 +62,8 @@ function binary_search(phonebook, lookup_person) {
   }
 }
 
-binary_search(phonebook, lookup_person)
+var result_binary_search = binary_search(phonebook, lookup_person);
+console.log(result_binary_search);
+
+var result_binary_search_index = find_index_of_searching_phone(phonebook, result_binary_search);
+console.log(result_binary_search_index);
