@@ -9,15 +9,15 @@ var phonebook = [
 
 var lookup_person = "Баранов Сергей";
 
-// Функция возвращения индекса пары
-function find_index_of_searching_phone(phonebook, lookup_person) {
+// // Функция возвращения индекса пары
+// function find_index_of_searching_phone(phonebook, lookup_person) {
   
-  for (var i = 0; i < phonebook.length; i++) {
-    if (phonebook[i][1] === lookup_person) {
-      return i;
-    }
-  }
-}
+//   for (var i = 0; i < phonebook.length; i++) {
+//     if (phonebook[i][1] === lookup_person) {
+//       return i;
+//     }
+//   }
+// }
 
 function get_middle_index(phonebook) {
     return Math.floor(phonebook.length / 2)
@@ -66,5 +66,5 @@ function binary_search(phonebook, lookup_person) {
 var result_binary_search = binary_search(phonebook, lookup_person);
 console.log(result_binary_search);
 
-var result_binary_search_index = find_index_of_searching_phone(phonebook, result_binary_search);
-console.log(result_binary_search_index);
+// var result_binary_search_index = find_index_of_searching_phone(phonebook, result_binary_search);
+// console.log(result_binary_search_index);
