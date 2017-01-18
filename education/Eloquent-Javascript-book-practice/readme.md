@@ -33,8 +33,6 @@
 
 **Решение:**
 ```js  
-const numberThree = 3;
-const numberFive = 5;
 const fizz = 'Fizz';
 const buzz = 'Buzz';
 
