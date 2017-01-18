@@ -120,8 +120,7 @@ if (!isNaN(checkboardLength)) {
 console.log(checkboard);
 ```
 **Вывод:**
->
-"  
+```
 # # # #  
  # # # #  
 # # # #  
@@ -130,4 +129,4 @@ console.log(checkboard);
  # # # #  
 # # # #   
  # # # #  
-"  
+```
