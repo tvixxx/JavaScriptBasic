@@ -241,3 +241,70 @@ console.log('the amount of your char: ' + countChar('aaabcde', 'a'));
 "the amount of your char: 3"
 ```
 
+## Глава №6 - Структуры данных: объекты и массивы
+### Задача №7 - Сумма диапазона
+**Условие**: 
+Во введении был упомянут удобный способ подсчёта сумм диапазонов чисел:
+
+```js
+console.log(sum(range(1, 10)));
+```
+
+Напишите функцию range, принимающую два аргумента – начало и конец диапазона – и возвращающую массив, который содержит все числа из него, включая начальное и конечное.
+
+Затем напишите функцию sum, принимающую массив чисел и возвращающую их сумму. Запустите указанную выше инструкцию и убедитесь, что она возвращает 55.
+
+В качестве бонуса дополните функцию range, чтобы она могла принимать необязательный третий аргумент – шаг для построения массива. Если он не задан, шаг равен единице. Вызов функции range(1, 10, 2) должен будет вернуть [1, 3, 5, 7, 9]. Убедитесь, что она работает с отрицательным шагом так, что вызов range(5, 2, -1) возвращает [5, 4, 3, 2].
+
+```js
+console.log(sum(range(1, 10)));
+// → 55
+console.log(range(5, 2, -1));
+// → [5, 4, 3, 2]
+```
+
+**Решение:**
+```js  
+function range(start, finish){
+  var array = [];
+  var standartIterator = 1;
+  var iteration = arguments[2] || standartIterator;
+  var i, j;
+  
+  if (iteration > 0) {
+    for (i = start; i <= finish; i += iteration) {
+      array.push(i);
+    }
+  } 
+  
+  if (iteration < 0) {
+    for (j = start; j >= finish; j += iteration) {
+      array.push(j);
+    }
+  }
+  
+  return array;
+}
+
+function sum(array) {
+  
+  var result = 0;
+  
+  for (var i = 0; i < array.length; i++) {
+    result += array[i];
+  }
+  
+  return result;
+}
+
+console.log('range from 1 to 10: ' + range(1, 10));
+console.log('range from 5 to 2 with iteration is -1: ' + range(5, 2, -1));
+console.log('ragne from 1 to 10 with sum numbers: ' + sum(range(1, 10)));
+```
+
+**Вывод:**
+```js
+"range from 1 to 10: 1,2,3,4,5,6,7,8,9,10"
+"range from 5 to 2 with iteration is -1: 5,4,3,2"
+"ragne from 1 to 10 with sum numbers: 55"
+```
