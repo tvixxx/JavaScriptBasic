@@ -308,3 +308,64 @@ console.log('ragne from 1 to 10 with sum numbers: ' + sum(range(1, 10)));
 "range from 5 to 2 with iteration is -1: 5,4,3,2"
 "ragne from 1 to 10 with sum numbers: 55"
 ```
+
+### Задача №7 - Сумма диапазона
+**Условие**: 
+У массивов есть метод reverse, меняющий порядок элементов в массиве на обратный. В качестве упражнения напишите две функции, reverseArray и reverseArrayInPlace. Первая получает массив как аргумент и выдаёт новый массив – с обратным порядком элементов. Вторая работает как оригинальный метод reverse – она меняет порядок элементов на обратный в том массиве, который был ей передан в качестве аргумента. Не используйте стандартный метод reverse.
+
+Если иметь в виду побочные эффекты и чистые функции из предыдущей главы, какой из вариантов вам кажется более полезным? Какой более эффективным?
+
+```js
+console.log(reverseArray(["A", "B", "C"]));
+// → ["C", "B", "A"];
+var arrayValue = [1, 2, 3, 4, 5];
+reverseArrayInPlace(arrayValue);
+console.log(arrayValue);
+// → [5, 4, 3, 2, 1]
+```
+
+**Решение:**
+```js  
+function reverseArray(arr) {
+  var inputArray = arr;
+  var outputArray = [];
+  var inputArrayLength = inputArray.length;
+  var i = 0; 
+  
+  for (i; i < inputArrayLength; i++) {
+    outputArray[i] = inputArray.pop();
+  }
+  
+  return outputArray;
+}
+
+console.log(reverseArray(["A", "B", "C"]));
+console.log(reverseArray([1,2,3,4,5,6,7,8,9,10]));
+
+
+function reverseArrayInPlace(arr) {
+  var oldArray = [];
+  var inputArrayLength = arr.length;
+  var i = 0;
+  
+  for (i; i < Math.floor(inputArrayLength/2); i++) {
+    oldArray = arr[i];
+    arr[i] = arr[inputArrayLength - 1 - i];
+    arr[inputArrayLength - 1 - i] = oldArray;
+  }
+  
+  return arr;
+}
+
+var arrayValue = [1, 2, 3, 4, 5];
+reverseArrayInPlace(arrayValue);
+console.log(arrayValue);
+```
+
+**Вывод:**
+```js
+["C", "B", "A"]
+[10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+[5, 4, 3, 2, 1]
+```
+
