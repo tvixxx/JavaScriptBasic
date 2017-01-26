@@ -1,8 +1,7 @@
-**Условие:**
-Напишите функцию removeDuplicates, которая принимает строку и удаляет все одинаковые символы, в том случае, если они идут друг за другом.
+//Условие:**
+//Напишите функцию removeDuplicates, которая принимает строку и удаляет все одинаковые символы, в том случае, если они идут друг за другом.
 
-**Решение:**
-```js
+//Решение:
 function removeDublicate(str) {
   var newStr = '';
   var tempStr = '';
@@ -26,11 +25,10 @@ let test3= 'tessstttttt';
 console.log(removeDublicate(test1));
 console.log(removeDublicate(test2));
 console.log(removeDublicate(test3));
-```
 
-**Вывод:**
-```js
-"Helo"
-"js"
-"test"
-```
+
+//Вывод:
+//"Helo"
+//"js"
+//"test"
+
