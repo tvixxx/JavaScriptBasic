@@ -7,6 +7,7 @@ function removeDublicate(str) {
   var tempStr = '';
   
   for (var i = 0; i < str.length; i++) {
+    
     if ( str[i] === tempStr) {
       continue;
     }
@@ -26,9 +27,7 @@ console.log(removeDublicate(test1));
 console.log(removeDublicate(test2));
 console.log(removeDublicate(test3));
 
-
 //Вывод:
 //"Helo"
 //"js"
 //"test"
-
