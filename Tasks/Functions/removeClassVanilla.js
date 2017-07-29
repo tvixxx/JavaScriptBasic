@@ -23,7 +23,6 @@ function removeClass(obj, cls) {
               return item !== cls;
            });
   
- 
   return obj.className = classes.join(" ");
 }
 
