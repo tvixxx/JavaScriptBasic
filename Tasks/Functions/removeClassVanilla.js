@@ -1,3 +1,6 @@
+// Функция по удалению классов
+
+// 1 method (with for cycle)
 function removeClass(obj, cls) {
   var classes = obj.className.split(" ");
   
@@ -11,3 +14,16 @@ function removeClass(obj, cls) {
   obj.className = classes.join(" ");
   return obj.className;
 }
+
+// 2 method (with filter method)
+function removeClass(obj, cls) {
+  var classes = obj.className
+          .split(" ")
+          .filter(function(item){
+              return item !== cls;
+           });
+  
+ 
+  return obj.className = classes.join(" ");
+}
+
