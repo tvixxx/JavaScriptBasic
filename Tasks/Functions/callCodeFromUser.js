@@ -5,11 +5,11 @@ let javascriptCodeFromUser = prompt('Пожалуйста, введите JavaSc
 function executeCode(code) {
 	'use strict';
 
-  try {
-  	eval(code);
-  } catch(e) {
-  	console.log(e, 'Возникла ошибка, не правильный код!');
-  }
+	try {
+		eval(code);
+	} catch(e) {
+  		console.log(e, 'Возникла ошибка, не правильный код!');
+	}
 }
 
 executeCode(javascriptCodeFromUser);
