@@ -1,11 +1,11 @@
 const objTypes = {
-  	number: 'number',
-    string: 'string',
-    boolean: 'boolean',
-    'undefined': 'undefined',
-    'NaN': 'NaN',
-    'null': 'null'
-  }
+	number: 'number',
+	string: 'string',
+	boolean: 'boolean',
+	'undefined': 'undefined',
+	'NaN': 'NaN',
+	'null': 'null'
+}
 
 function filterByType() {
   let result = [];
