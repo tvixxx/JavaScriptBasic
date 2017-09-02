@@ -8,7 +8,7 @@ function executeCode(code) {
 	try {
 		eval(code);
 	} catch(e) {
-  		console.log(e, 'Возникла ошибка, не правильный код!');
+  		console.log(e, 'Возникла ошибка, напишите правильный код!');
 	}
 }
 
