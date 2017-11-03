@@ -12,7 +12,6 @@ function selectionSort(arr) {
   return newArr;
 }
 
-
 function findSmallest(arr) {
   var smallest = arr[0];
   var smallestIndex = 0;
