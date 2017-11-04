@@ -59,7 +59,7 @@ console.log(pair_index);
 const array = [1, 2, 3, 4, 5, 6, 7, 8];
 // const array = [1, 3, 5, 7, 9, 11, 13, 15];
 const noArgsMessage = 'please pass all the arguments';
-let step = 0;
+let steps = 0;
 
 function binarySearch(list, target) {
   if (!list && !target) return noArgsMessage;
@@ -73,7 +73,7 @@ function binarySearch(list, target) {
     middle = Math.floor((begin + end) / 2);
     guess = list[middle];
     
-    step+= 1;
+    steps+= 1;
     
     if (guess === target) {
       return middle;
@@ -93,4 +93,4 @@ console.log(
   'the index of element is: ',
   binarySearch(array, 8)
 );
-console.log('O(' + step + ')');
+console.log('O(' + steps + ')');
