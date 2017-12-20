@@ -1,4 +1,4 @@
-// Write a function which can take from versions sequence.
+// Write a function which can take the last version from versions sequence.
 // function can take a string parameter.
 
 const versions = [
