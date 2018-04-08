@@ -5,8 +5,7 @@ function isAnagram(originalStr, testStr) {
     console.log('They are not an anagrams, these words are the same!');
     return false;
   }
-  
-
+ 
   if (sortString(originalStr) !== sortString(testStr)) {
     console.log('Eh... They are not the anagrams');
     return false;
