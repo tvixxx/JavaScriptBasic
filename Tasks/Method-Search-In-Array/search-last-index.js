@@ -36,14 +36,14 @@ function incrementLastArrayElement(_array)  {
 
 
 /* Third mehotd */
-var array = [0,0,7];
+const array = [0,0,7];
 
 function getLastIndexUp(_array) {
     if (!_array) {
         return;
     }
     
-   var lastIndex = _array.pop();
+   let lastIndex = _array.pop();
    _array.push(lastIndex + 1);
    return _array;
 };
