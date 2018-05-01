@@ -1,17 +1,21 @@
-var original = [true, true, undefined, false, null];
+const original = [true, true, undefined, false, null];
+
+// Array.prototype.slice.call (using call for pseudo arrays or if our "array" doesn't have slice method)
+const copy0 = Array.prototype.slice.call(original, 0);
+console.log(copy0); // [true, true, undefined, false, null]
 
 //slice
-var copy1 = original.slice(0);
+const copy1 = original.slice(0);
 console.log(copy1); // [true, true, undefined, false, null]
 
 //spread operator
-var copy2 = [...original];
+const copy2 = [...original];
 console.log(copy2); // [true, true, undefined, false, null]
 
 //deep copying
-var deepArray = [["freeTest"]];
+let deepArray = [["freeTest"]];
 
-var deepCopy = JSON.parse(JSON.stringify(deepArray));
+let deepCopy = JSON.parse(JSON.stringify(deepArray));
 
 console.log(deepCopy); // [["freeTest"]]
 
