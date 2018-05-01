@@ -1,34 +1,35 @@
 /* Task 1 */
 /* Search the last index of array and increased by one */
 
-var sampleArray = [0,0,7];
+const sampleArray = [0,0,7];
 
-var incrementLastArrayElement = function(_array) {
-    var newArray = [];
-
-    for (var i = 0; i < _array.length; i++) {
-        console.log(_array + " " + "Your length is: " + _array.length);
-        newArray[i] = _array[i];
+const incrementLastArrayElement = (_array) => {
+    if (!_array) {
+        return;
     }
-        var lastPop = newArray.pop();
-        console.log(lastPop);
-        
-        lastPop += 1;
-        console.log("lastPop is upper to: " + lastPop);
-        
-        newArray.push(lastPop);
-        console.log(newArray);
-    // Don't delete this line!
-    return newArray;
+    
+    let tempArray = [];
+
+    for (let i = 0; i < _array.length; i++) {
+        tempArray[i] = _array[i];
+    }
+   
+    let lastEl = tempArray.pop();
+    lastEl += 1;
+    tempArray.push(lastEl);
+    return tempArray;
 };
 console.log(incrementLastArrayElement(sampleArray));
 
 
 /* Second method - through the *slice* */
 function incrementLastArrayElement(_array)  {
-    var newArray = [];
-    newArray = _array.slice(0);
-    var lastNumber = newArray.pop();
+    if (!_array) {
+        return;
+    }
+    
+    let newArray = _array.slice(0);
+    const lastNumber = newArray.pop();
     newArray.push(lastNumber + 1);
     return newArray;
 }
@@ -38,6 +39,10 @@ function incrementLastArrayElement(_array)  {
 var array = [0,0,7];
 
 function getLastIndexUp(_array) {
+    if (!_array) {
+        return;
+    }
+    
    var lastIndex = _array.pop();
    _array.push(lastIndex + 1);
    return _array;
