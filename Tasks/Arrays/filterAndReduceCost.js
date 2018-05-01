@@ -25,23 +25,18 @@
 
 // First method
 totalCost() {
-
-    let sum = 0;
-    
-    for (let race of this.races) {
-    
-      if (race.isRacing) {
-      
-        sum += race.entryFee;
-      }
-    }
-    
-    return sum;
+ let sum = 0;
+ for (let race of this.races) { 
+   if (race.isRacing) {
+     sum += race.entryFee;
+   }
+ }
+ return sum;
 }
 
 // Second method
  totalCost() { 
-    return this.races
-                .filter( (item) => item.isRacing === true )
-                .reduce( (prev, current) => prev + current.entryFee, 0 );
+   return this.races
+               .filter(item => item.isRacing === true)
+               .reduce( (prev, current) => prev + current.entryFee, 0);
   }
