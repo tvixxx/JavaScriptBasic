@@ -1,10 +1,6 @@
-var arrayOfArrays = [[1], [2], [3], [4]];
-var flatArr;
+const arrayOfArrays = [[1], [2], [3], [4]];
 
-// ES6 method
-flatArr = arrayOfArrays.reduce(function(a, b){
-     return a.concat(b);
-}, []);
+const flatArr = arrayOfArrays.reduce((a, b) => a.concat(b), []);
 
 // Basic method
-flatArr = [].concat.apply([], arrayOfArrays);
+const flatArr = [].concat.apply([], arrayOfArrays);
