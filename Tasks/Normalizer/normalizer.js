@@ -39,8 +39,8 @@ const posts = [
 function normalize(arr) {
   return arr.reduce((acc, _item) => {
     const commentsIds = _item.comments.forEach((_comment) => {
-		  acc.allCommentsIds.push(_comment.id);
-  	});
+  	acc.allCommentsIds.push(_comment.id);
+    });
   
     acc.byId[_item.id] = {
       id: _item.id,
