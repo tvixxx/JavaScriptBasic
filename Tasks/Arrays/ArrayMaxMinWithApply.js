@@ -1,4 +1,4 @@
-You can use method apply for search min and max value in array:
+// You can use method apply for search min and max value in array:
 
 //Min value 
 Math.min.apply(null, [29,38,115,1234,76,4,23,21,19,15,16]);
