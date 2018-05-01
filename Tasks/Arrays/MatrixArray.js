@@ -26,5 +26,4 @@ function readAndPrintArray(array){
 }
 
 readAndPrintArray(matrix);
-
 // test here http://codepen.io/tvixxx/pen/EyxbGK
