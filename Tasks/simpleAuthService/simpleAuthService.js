@@ -11,6 +11,8 @@ function getToken() {
   return (store.getters.getToken ? store.getters.getToken : localStorage.getItem('token'));
 }
 
+// base HTTPApi request for common methods
+// which use token for request
 export const HTTPApi = ({ method, url, data }) => {
   const token = getToken();
   const request = axios.create({
