@@ -31,7 +31,6 @@ export const HTTPApi = ({ method, url, data }) => {
     });
 };
 
-
 // change route is:
 import { router } from '../main';
 import routes from '../router/routes';
