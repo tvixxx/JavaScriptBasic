@@ -1,3 +1,7 @@
+Напишите функцию isPrime.
+Она принимает число и возвращает true, если число является простым, и false в ином случае.
+
+** Решение **
 const isPrime = (num) => {
   const isNumEqualOne = num === 1;
   let resultCounter = 2;
