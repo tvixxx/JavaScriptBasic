@@ -3,7 +3,6 @@
 
 const findPrimitiveBox = (pair) => {
   
-  toString(pair);
   if (!isPair(car(pair)) && !isPair(cdr(pair))) {
       return pair;
   }
