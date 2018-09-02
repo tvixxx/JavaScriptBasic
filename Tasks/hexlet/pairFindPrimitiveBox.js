@@ -2,7 +2,6 @@
 находит внутри нее пару без вложенных пар (как описано выше) и возвращает наружу.
 
 const findPrimitiveBox = (pair) => {
-  
   if (!isPair(car(pair)) && !isPair(cdr(pair))) {
       return pair;
   }
