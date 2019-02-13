@@ -51,8 +51,8 @@ Frontend developer with 2.5 years of development experience.
 * Tools: Webpack, Gulp
 * IDE: WebStorm, PHPStorm, Idea, Visual Studio Code.
 * SourceControl: git, gitHub, gitLab, gitKraken, sourceTree
-* Additional Tools: Photoshop, Illustrator, Trello
-* OS: MacOS.
+* Additional Tools: Photoshop, Illustrator, Trello, Figma, Sketch, Postman
+* OS: MacOS, Windows
 * Project management system: Redmine, Jira, Confluence, YouTrack (jetBrains)
 * HubSpot
 * MailChimp (Email manager)
