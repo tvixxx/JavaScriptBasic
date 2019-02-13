@@ -59,22 +59,25 @@ Frontend developer with 2.5 years of development experience.
 
 ## Previous projects (relevant)
 
-### [Creating new big section and feature. Piano](2018-Present days)
+### [Creating new big section and feature. Piano](https://piano.io/) (2018-Present days)
 Creating and updating new section of business platform, working in team with 4 backend and 3 frontend developers.
 Technologies used: Angular (7), typescript, tslint, rxjs(6+), ngx-model as a service-store, java and selenium tests.
 
+### [Piano.io site](https://piano.io/) (2017)
+Created a new pages using Angular2+, responsive design, animations and etc.
 
-### [Legacy big project. Piano](2017)
+
+### [Legacy big project. Piano](https://piano.io/) (2017-2017(summer))
 The business platform for digital media.
 Big project using 5 sub projects with different technologies, such as: Angular 1.2, Angular(4), Vanilla JavaScript, jQuery,TypeScript, Webpack 2 and 3, Gulp, SCSS, LESS, HTML.
 from: simple markup for templates and styles.
 to: creating new features, new templates, updating design in existing project, creating functionality using Angular 4, AngularJS 1.2.22 and etc.
 
-### [Admin site of Russian companies.](2016-2017)
+### [Admin site of Russian companies.] (2016-2017)
 Admin site of Russian companies.
 Desktop admin site, using: Angular2, TS, SCSS, HTML, Symphony, twig,
 
-### [Promo site of Russian news company](2016)
+### [Promo site of Russian news company] (2016)
 Promo site of Russian udmurt news company.
 Adaptive promo websites, using: JS, ES6, jQuery, SCSS, HTML5, twig.
 
