@@ -1,6 +1,5 @@
 // To find a sum of min elems in array
 
-
 function reductionCost(num) {
   let costs = 0;
 
