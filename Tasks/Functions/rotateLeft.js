@@ -4,7 +4,7 @@
 function rotLeft(a, d) {
     let left = d;
     
-    if (!left) {
+    if (!left || !a) {
         return a;
     }
     
