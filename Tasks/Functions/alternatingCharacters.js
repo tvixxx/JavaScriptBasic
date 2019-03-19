@@ -6,9 +6,9 @@ function alternatingCharacters(s) {
         return s;
     }
 
+    const strLength = s.length;
     let counter = 0;
     let previousSymbol = s[0];
-    let strLength = s.length;
 
     for (let i = 1; i < strLength; i++) {
         if (s[i] === previousSymbol) {
