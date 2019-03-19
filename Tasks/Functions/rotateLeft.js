@@ -4,12 +4,12 @@
 function rotLeft(a, d) {
     let left = d;
     
-    if (left > a.length) {
-        left = left % a.length;
-    }
-    
     if (!left) {
         return a;
+    }
+    
+    if (left > a.length) {
+        left = left % a.length;
     }
 
     return a.slice(left, a.length).concat(a.slice(0, left));
