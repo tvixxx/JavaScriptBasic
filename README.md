@@ -1,7 +1,7 @@
 Shilov Kirill Alekseevich.  
-Age: 23.  
+Age: 26.  
 From: Russia, Izhevsk.  
-Frontend developer with 2.5 years of development experience.  
+Frontend developer with 5 years of development experience.  
 
 ## Education
 
@@ -32,12 +32,14 @@ Frontend developer with 2.5 years of development experience.
 * ES6
 * Vanilla JS
 * Angular 1.2, 1.6
-* Angular 2+ and newest
+* Angular 2+ and newest (11+)
 * TypeScript
+* NGRX
+* rxjs
+* Architecture
 * HTML5 Video API, Google MAP API, History API, Canvas (fabric.js).
 * Node.js
 * Koa.js, Express.js
-* React.js, Vue.js
 
 
 ### Templating
